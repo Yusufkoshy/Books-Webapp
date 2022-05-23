@@ -1,0 +1,154 @@
+/* :root {
+
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*End Of Global Style*/
+
+img {
+    max-width: 3em;
+}
+
+/*start Of App Style*/
+
+.container {
+    padding-inline: 10em;
+}
+
+.wrapper {
+    margin-top: 7em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 #ddd;
+}
+
+header {
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+h1 {
+    padding-block: 1em;
+    color: #063970;
+    font-size: 40px;
+}
+
+.search__input{
+    margin-bottom: 1em;
+    padding-inline: 0.5em;
+    padding-block: 0.5em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 17em;
+}
+
+.search__input:focus {
+    outline-width: 0.1em;
+    outline-style: solid;
+    outline-color: #063970;
+    transition: 0.4s ease;
+}
+
+.search__input:hover {
+    outline-width: 0.1em;
+    outline-style: solid;
+    outline-color: #063970;
+    transition: 0.4s ease;
+}
+
+main {
+    margin-block: 1em;
+    padding-inline: 2em;
+}
+
+h2 {
+    color: #063970;
+    font-size: 35px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    border-left: solid #ddd;
+    margin-block: 1em;
+    padding-block: 0.4em;
+}
+
+li:hover {
+    border-left: solid #063970;
+    transition: 0.4s ease;
+}
+
+span {
+    padding-inline: 0.5em;
+}
+
+.delete__icon {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.book__item:hover .delete__icon {
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+.add__form {
+    text-align: center;
+}
+
+.add__input { 
+    margin-bottom: 1em;
+    padding-inline: 0.5em;
+    padding-block: 0.5em;
+    border: solid #ddd;
+    border-width: 0.1em;
+    outline: none;
+    border-radius: 5px;
+    width: 20em;
+}
+
+.add__input:hover {
+    border: solid #0752a3;
+    border-width: 0.1em;
+    transition:  0.4s ease;
+}
+
+.add__input:focus {
+    border: solid #0752a3;
+    border-width: 0.1em;
+    transition:  0.4s ease;
+}
+
+.add__button {
+    padding: 0.6em;
+    padding-inline: 2em;
+    margin-inline: -1em;
+    background-color: #0752a3;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.add__button:hover {
+    background-color: #063970;
+}
