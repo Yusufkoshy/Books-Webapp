@@ -27,6 +27,12 @@ img {
     padding-inline: 10em;
 }
 
+@media (max-width: 800px) {
+    .container {
+        padding-inline: 2em;
+    }
+  }
+
 .wrapper {
     margin-top: 7em;
     border-radius: 10px;
@@ -44,6 +50,13 @@ h1 {
     color: #063970;
     font-size: 40px;
 }
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+  }
+
 
 .search__input{
     margin-bottom: 1em;
