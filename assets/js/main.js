@@ -11,7 +11,7 @@ function checkLocaleStorage() {
         return localBooks;
     }
     return false;
-}
+};
 
 function addBook(books) {
 
@@ -27,12 +27,15 @@ function addBook(books) {
                     </li> 
         `
     }
-}
+};
 
 addBook(books);
 
 function add(e) {
     e.preventDefault();
+    if (addInput.value === "") {
+        return;
+    }
 
     var bookTitle = addInput.value;
     
@@ -41,16 +44,16 @@ function add(e) {
     addBook(books);
 
     addInput.value = '';
-}
+};
 
 function deleteItem(e) {
     books.splice(e, 1);
     addBook(books);
-}
+};
 
 function preventSubmit(e) {
     e.preventDefault();
-}
+};
 
 searchInput.addEventListener("input", (e) => {
     var text = e.target.value.toLowerCase();
@@ -66,4 +69,4 @@ searchInput.addEventListener("input", (e) => {
     })
     console.log (matchedBooks)
     addBook(matchedBooks);
-} )
+} );
