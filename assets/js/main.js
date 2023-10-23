@@ -58,7 +58,6 @@ function preventSubmit(e) {
 searchInput.addEventListener("input", (e) => {
     var text = e.target.value.toLowerCase();
     var matchedBooks = [];
-    console.log(text)
 
     if (!text) {
       addBook(books);
