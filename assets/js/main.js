@@ -67,6 +67,5 @@ searchInput.addEventListener("input", (e) => {
     matchedBooks = books.filter( book => {
         return book.toLowerCase().includes(text)
     })
-    console.log (matchedBooks)
     addBook(matchedBooks);
 } );
